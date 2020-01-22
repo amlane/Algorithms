@@ -6,14 +6,9 @@ import math
 def recipe_batches(recipe, ingredients):
     # keep a count of the number of times a recipe is made
     count = 0
-    # get a list of the key names
-    x = list()
 
-    for i in ingredients:
-        x.append(i)
     # as long as there are the same numbers of ingredients left as in the recipe
-
-    while len(x) == len(ingredients) and len(x) == len(recipe):
+    while len(ingredients) == len(recipe):
         # subtract each item in the recipe from the ingredients
         for i in recipe:
             # if the result is less than 0, remove the item from the dictionary
