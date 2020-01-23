@@ -18,8 +18,8 @@ def recipe_batches(recipe, ingredients):
         # else add 1 to the count
             else:
                 ingredients[i] -= recipe[i]
-        count += 1
        # if this is last item in loop add 1 to the count
+        count += 1
     # if not return count
     return count
 
